@@ -1,0 +1,223 @@
+@charset
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&');
+
+@font-face {
+    font-family:'fonte1' ;
+    src: url(font.ttf) format(truetype);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'font2';
+    src: url(font1.ttf) format(truetype);
+    font-weight: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor1: #4AF78C;
+    --cor2: #00F55C;
+    --cor3: #00C24A;
+    --cor4: #237543;
+    --cor5: #00752D;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque:'Bebas Neue', cursive;
+    --fonte-dowlowd: sans-serif,'fonte1';
+    --fonte-dowlowd2: 'font2', serif;
+}
+/*TUDO ABAIXO PERTENCE A PÁGINA INDEX.HTML*/
+
+body{
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor1);
+    margin: auto;
+}
+
+header{
+    background-image: linear-gradient(to right, var(--cor4), var(--cor3));
+    height: 150px;
+    text-align: center;
+}
+
+header h1{
+    font-family: var(--fonte-dowlowd);
+    font-size: 3em;
+    padding: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.123);
+}
+
+header p{
+    color: beige;
+    font-size: 1.1em;
+    text-shadow: 2px 2px 2px black;
+    margin: auto;
+}
+
+nav{
+    background-image: linear-gradient(to right, var(--cor4), var(--cor3));
+    padding-top: 15px;
+}
+
+nav{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.705);
+}
+
+nav a{
+    font-size: 1.1em;
+    color:white;
+    padding: 10px 10px 0px 10px;
+    text-decoration: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition-duration: 0.6s;
+}
+
+nav a:hover{
+    color: black;
+    background-color: var(--cor1);
+}
+
+main{
+    min-width: 300px;
+    max-width: 1100px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
+    padding: 20px;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius: 5px;
+}
+
+main h1{
+    font-family: var(--fonte-dowlowd);
+    margin-left: 10px;
+    padding: 10px;
+
+}
+main h2{
+    font-family: var(--fonte-dowlowd);
+    color: rgba(0, 0, 0, 0.705);
+    text-indent: 8px;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+main > p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.8em;
+}
+
+main p a{
+    background-color: rgba(250, 250, 246, 0.938);
+    border-radius: 5px;
+    text-decoration: none;
+}
+main p a:hover{
+    background-color: var(--cor3);
+    text-decoration: underline;
+}
+
+main img{
+    margin-top: 10px;
+    width: 100%;
+    min-height: 300px;
+    max-height: 500px;
+    border-radius: 5px;
+}
+main div.fotografo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.vejamais{
+    padding: 0px 0px 10px 10px;
+    margin-bottom: 10px;
+}
+
+
+div iframe{
+    margin-right: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+article{
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor2);
+    height: 200px;
+    border-radius: 5px;
+    text-indent: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.774);
+}
+article h3{
+    font-family: var(--fonte-dowlowd);
+    color: rgba(0, 0, 0, 0.705);
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+article p{
+    margin-bottom: 10px;
+}
+
+ article > ul{
+    list-style-position: inside;
+}
+article a{
+    line-height: 2em;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+}
+article a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+footer a{
+    background-color: var(--cor5) ;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: black;
+    padding: 5px;
+    background-color: var(--cor2);
+    text-decoration: underline;
+    border-radius: 3px;
+}
+
+/*TUDO ACIMA PERTENCE A PÁGINA INDEX.HTML*/
+
+main div.conteudo-menor{
+    margin: auto;
+    min-width: 300px;
+    max-width: 700px;
+}
+
+div.video{
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 30px;
+    padding-bottom: 60%;
+    position: relative;
+}
+
+div.video iframe{
+    position:absolute;
+    top: 5%;
+    left: 0%;
+    height: 90%;
+}
