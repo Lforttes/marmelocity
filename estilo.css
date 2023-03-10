@@ -36,6 +36,11 @@ body{
     font-family: var(--fonte-padrao);
     background-color: var(--cor1);
     margin: auto;
+
+}
+.border{
+    border: 1px solid black;
+    box-shadow: 1px 22px 22px rgb(0, 0, 0);
 }
 
 header{
